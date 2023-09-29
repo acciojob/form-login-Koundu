@@ -1,13 +1,12 @@
-const form = document.getElementById("form1")
-const submit = form[2];
+
 
 function getFormvalue() {
     //Write your code here
-	fName = form[0].value;
-	lName = form[1].value;
+	fName = document.querySelector('input[name="fname"]'];
+	fName = document.querySelector('input[name="lname"]'];
 	alert(fName +" "+lName);
 }
 
-submit.addEventListener('click',()=>{
+document.querySelector('input[type="sbumit"]').addEventListener('click',()=>{
 	getFormvalue(fName,lName);
 })
