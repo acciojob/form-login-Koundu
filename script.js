@@ -2,11 +2,12 @@
 
 function getFormvalue() {
     //Write your code here
-	fName = document.querySelector('input[name="fname"]'];
-	fName = document.querySelector('input[name="lname"]'];
+	fName = document.querySelector('input[name="fname"]').value;
+	lName = document.querySelector('input[name="lname"]').value;
 	alert(fName +" "+lName);
 }
 
-document.querySelector('input[type="sbumit"]').addEventListener('click',()=>{
-	getFormvalue(fName,lName);
+document.querySelector('input[type="submit"]').addEventListener('click',(e)=>{
+	e.preventDefault();
+	getFormvalue();
 })
